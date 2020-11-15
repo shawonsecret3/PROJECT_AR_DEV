@@ -54,7 +54,13 @@
       <keyMapping columnObjectName="Projection_1" columnName="ZLOAD_TIME"/>
     </attribute>
   </attributes>
-  <calculatedAttributes/>
+  <calculatedAttributes>
+    <calculatedAttribute id="DATE_TIME" order="8" semanticType="empty" displayAttribute="false" attributeHierarchyActive="false">
+      <keyCalculation datatype="NVARCHAR" expressionLanguage="COLUMN_ENGINE" length="30">
+        <formula>&quot;ZLOAD_DATE&quot;+&quot;ZLOAD_TIME&quot;</formula>
+      </keyCalculation>
+    </calculatedAttribute>
+  </calculatedAttributes>
   <baseMeasures/>
   <calculatedMeasures/>
   <restrictedMeasures/>
