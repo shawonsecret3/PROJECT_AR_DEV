@@ -1,0 +1,68 @@
+{
+  "CROSS_SCHEMA_PRODUCTS": {
+    "object_owner" : {
+      "schema_privileges":[ 
+        { 
+          "reference":"S4SLT",
+          "privileges_with_grant_option":["SELECT"]
+        },
+        { 
+          "reference":"_SYS_BIC",
+          "privileges_with_grant_option":["SELECT"]
+        },
+        { 
+          "reference":"MS4SLT",
+          "privileges_with_grant_option":["SELECT"]
+        },
+        { 
+          "reference":"SAPABAP1",
+          "privileges_with_grant_option":["SELECT"]
+        },
+        { 
+          "reference":"ODW_COMMON",
+          "privileges_with_grant_option":["SELECT"]
+        },
+        { 
+          "reference":"_SYS_BI",
+          "privileges_with_grant_option":["SELECT"]
+        }
+        
+      ]
+    },
+     "application_user" : {
+      "schema_privileges":[ 
+        { 
+          "reference":"S4SLT",
+          "privileges_with_grant_option":["SELECT"]
+
+        },
+        { 
+          "reference":"_SYS_BIC",
+          "privileges_with_grant_option":["SELECT"]
+
+        },
+        { 
+          "reference":"MS4SLT",
+          "privileges_with_grant_option":["SELECT"]
+
+        },
+        { 
+          "reference":"SAPABAP1",
+          "privileges_with_grant_option":["SELECT"]
+
+        },
+        { 
+          "reference":"ODW_COMMON",
+          "privileges_with_grant_option":["SELECT"]
+
+        },
+        { 
+          "reference":"_SYS_BI",
+          "privileges_with_grant_option":["SELECT"]
+        }
+        
+      ]
+    }
+
+  }
+}
