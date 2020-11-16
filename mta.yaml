@@ -1,0 +1,24 @@
+ID: GIT_DEMO
+_schema-version: '2.1'
+version: 0.0.1
+modules:
+  - name: DB
+    type: hdb
+    path: DB
+    requires:
+      - name: hdi_DB
+        properties:
+          TARGET_CONTAINER: '~{hdi-container-name}'
+      - name: CROSS_SCHEMA_PRODUCTS
+resources:
+  - name: hdi_DB
+    parameters:
+      config:
+        schema: GIT_SCHEMA
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
+  - name: CROSS_SCHEMA_PRODUCTS
+    type: org.cloudfoundry.existing-service
+    parameters:
+      service: CROSS_SCHEMA_PRODUCTS
